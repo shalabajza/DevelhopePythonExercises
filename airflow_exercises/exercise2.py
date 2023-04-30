@@ -5,7 +5,7 @@ from airflow.operators.python_operator import PythonOperator
 #create a dag with one python task only. This function should print the current datetime
 
 def python_first_function():
-    print(datetime.now())
+    print(datetime.now().date())
 
 #create the DAG which calls the python logic that you had created above
 default_dag_args = { 
